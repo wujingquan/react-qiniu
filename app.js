@@ -13,7 +13,7 @@ router.post('/action', (ctx, next) => {
     sk,
     bk,
     ex
-  } = ctx.request.body
+  } = ctx.request.body;
   ctx.body = action(ak, sk, bk, ex);
 });
 
